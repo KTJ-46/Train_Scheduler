@@ -38,6 +38,7 @@ var firebaseConfig = {
     console.log(newTrain.startTime);
     console.log(newTrain.frequency);
 
+    $("#trainName").empty();
 
 
 });
