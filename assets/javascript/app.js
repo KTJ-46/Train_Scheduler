@@ -39,7 +39,7 @@ var firebaseConfig = {
 
         trainName : trainName,
         destination : destination,
-        startTime : startTime,
+        startTime : newStartTime,
         frequency: frequency,
     };
    
@@ -74,7 +74,7 @@ dataRef.ref().on("child_added", function(childSnapshot) {
     //console.log(startTime);
     //console.log(frequency);
 
-    var beginTime = Number(newStartTime);
+    var beginTime = Number(startTime);
    
     var newBeginTime = moment(beginTime);
     var newCurrentTime = moment();
